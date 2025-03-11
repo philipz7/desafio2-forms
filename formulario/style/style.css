@@ -1,0 +1,44 @@
+.formulario{
+    background-color:rgba(33, 53, 166, 1);
+    width: 1280px;
+    height: 832px;
+    margin: 0 auto;
+    top: 140px;
+    left:712px ;
+    position: absolute;
+}
+
+.apresentacao__formulario{
+ width : 600px;
+height: 2438px;
+background: var(--surface-colors-surface-primary, rgba(255, 255, 255, 1));
+border: 5px solid  red;
+    
+}
+.inscricao{
+    padding: 20px;
+    justify-content: center;
+    gap: 24px;
+    box-shadow: aqua;
+    
+}
+
+.informacoes__participante{
+    gap: 100px;
+}
+input{
+    
+    width: 528px;
+    height: 48px;
+    border: 2px solid var(--stroke-colors-stroke-highlight, rgba(243, 84, 28, 1))
+}
+
+
+img{ 
+    position:absolute;
+    left: 50%;
+    top: 20%;
+
+    
+    
+}
