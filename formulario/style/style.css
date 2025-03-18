@@ -1,30 +1,29 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-    
-body{
+
+body {
     background-color: black;
 }
 
-nav{
+nav {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    color:#8F8881 ;
+    color: #8F8881;
 }
-.formulario{
-    background-color:#2135A6;
+
+.formulario {
+    background-color: #2135A6;
     width: 1280px;
     height: 832px;
     margin: 0 auto;
     top: 140px;
-    left:712px ;
+    left: 712px;
     position: absolute;
 }
 
 .upload-zone {
     width: 100%;
-    display: grid;
-    margin: 15px 0;
+    height: 160px;
     cursor: pointer;
     position: relative;
     text-align: center;
@@ -32,31 +31,97 @@ nav{
     justify-items: center;
     align-content: center;
     border: 1.6px dashed #00000070;
-  }
 
-  
 
-  .action-btns {
-    display: flex;
-    gap: 20px;
-  }
 
-.apresentacao__formulario{
- width : 600px;
-height: 2438px;
-background: #FFFFFF;
-border: 5px solid  red;
-
-    
 }
-.inscricao{
+
+
+
+.apresentacao__formulario {
+    width: 600px;
+    height: 2438px;
+    background: #FFFFFF;
+    border: 5px solid red;
+
+
+}
+
+.inscricao {
     padding: 20px;
     justify-content: center;
     gap: 24px;
     box-shadow: aqua;
 }
-P{
-    font-family:"Poppins", sans-serif; 
+
+.Endereço__residencial {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+
+}
+
+.Endereco {
+    flex-direction: wrap;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+.Endereco__lugar {
+    flex-direction: wrap;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.trilhas {
+
+    width: 528px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+
+
+}
+
+.trilha {
+    background-color: #D6D3D1;
+    width: 256px;
+    height: 120px;
+    gap: 8px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.butoes{
+    padding-left: 210px;
+
+}
+
+.butao__1{
+    width: 123px;
+    height: 48px;
+}
+ .butao__2{
+    width: 169px;
+    height: 48px;
+}
+
+ 
+
+
+
+
+
+P {
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #8F8881;
@@ -64,47 +129,51 @@ P{
 }
 
 
-form{
+form {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     width: 528px;
     height: 20px;
     color: #8F8881;
     font-size: 14px;
-    
+
 
 }
-h1{
-    font-family:"Poppins", sans-serif; 
+
+h1 {
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 24px;
 }
 
-h3{
-    font-family:"Poppins", sans-serif;
-    font-weight:600;
+.titulos {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     font-size: 16px;
+    color: #292524;
+
+
 }
 
 
 
-input{
-    
+input {
+
     width: 528px;
     height: 48px;
     border: 2px solid #D6D3D1;
 }
 
-input:hover{
+input:hover {
     border: 2px solid #f67841;
 }
 
 
-img{ 
-    position:absolute;
+img {
+    position: absolute;
     left: 50%;
     top: 20%;
 
-    
-    
+
+
 }
