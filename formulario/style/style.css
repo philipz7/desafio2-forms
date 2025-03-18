@@ -1,5 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    
 body{
     background-color: black;
+}
+
+nav{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color:#8F8881 ;
 }
 .formulario{
     background-color:#2135A6;
@@ -11,11 +21,32 @@ body{
     position: absolute;
 }
 
+.upload-zone {
+    width: 100%;
+    display: grid;
+    margin: 15px 0;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    justify-items: center;
+    align-content: center;
+    border: 1.6px dashed #00000070;
+  }
+
+  
+
+  .action-btns {
+    display: flex;
+    gap: 20px;
+  }
+
 .apresentacao__formulario{
  width : 600px;
 height: 2438px;
-background: var(--surface-colors-surface-primary, rgba(255, 255, 255, 1));
+background: #FFFFFF;
 border: 5px solid  red;
+
     
 }
 .inscricao{
@@ -23,17 +54,53 @@ border: 5px solid  red;
     justify-content: center;
     gap: 24px;
     box-shadow: aqua;
-    
+}
+P{
+    font-family:"Poppins", sans-serif; 
+    font-weight: 400;
+    font-size: 16px;
+    color: #8F8881;
+
 }
 
 .informacoes__participante{
     gap: 100px;
+
+
 }
+form{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 528px;
+    height: 20px;
+    color: #8F8881;
+    font-size: 14px;
+    
+
+}
+h1{
+    font-family:"Poppins", sans-serif; 
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h3{
+    font-family:"Poppins", sans-serif;
+    font-weight:600;
+    font-size: 16px;
+}
+
+
+
 input{
     
     width: 528px;
     height: 48px;
-    border: 2px solid var(--stroke-colors-stroke-highlight, rgba(243, 84, 28, 1))
+    border: 2px solid #D6D3D1;
+}
+
+input:hover{
+    border: 2px solid #f67841;
 }
 
 
