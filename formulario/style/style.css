@@ -2,10 +2,11 @@
 
 
 body {
-    background-color: rgb(0, 0, 0);
+
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 nav {
@@ -29,13 +30,55 @@ nav {
     margin: 0 auto;
     display: flex;
 }
-.ilustracao {
-    position: absolute;
-    left: 50%;
-    top: 20%;
+.ilustracao{
+    width: 40%;
 }
 
+.ilustracao img{
+    position: fixed;
+}
+.baixo{
+    margin-bottom: 0;
+}
+.cima{
+    margin-top: 0;
+}
 
+#wave-text span {
+    display: inline-block;
+    animation: wave 1s ease-in-out infinite;
+  
+    /* Degradê aplicado diretamente no span */
+    background: linear-gradient(90deg, #064de6, #a910e6, #064de6);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: wave 1.3s ease-in-out infinite, gradientMove 4s linear infinite;
+  }
+  
+  /* Animação de onda */
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  
+  /* Movimento do degradê */
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+  
+  
 .upload-zone {
     width: 100%;
     height: 160px;
@@ -50,9 +93,10 @@ nav {
 
 .apresentacao__formulario {
     width: 600px;
-    height: 2438px;
+    height: 1070px;
     background: #FFFFFF;
-    border: 1px solid black;
+    border-radius: 5px;
+    /* border: 1px solid black; */
 }
 
 .inscricao {
@@ -104,19 +148,65 @@ nav {
     gap: 5px;
     justify-content: space-evenly;
 }
+.trilha1{
+    width: 100%;
+    height: 30px;
+    border: 2px solid #E7E5E4;
+    border-radius: 8px;
+    background: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    color:#8F8881;
+    padding: 10px;
+    outline: none;
+    transition: border 0.3s ease, background 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+.trilha1:hover,
+.trilha1:focus {
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #12f0e5, #a910e6, #064de6);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  animation: borderAnimation 4s linear infinite;
+}
 
 .trilha {
-    background: #FFFFFF;
-    border: 2px solid #E7E5E4;
     width: 256px;
     height: 120px;
+    border: 2px solid #E7E5E4;
     border-radius: 8px;
+    background: #FFFFFF;
     text-align: center;
-    align-items: center;  
-}
-.trilha:hover{
-    border: 2px solid #f67841;
-}
+    font-size: 16px;
+    color:#8F8881;
+    padding: 10px;
+    outline: none;
+    transition: border 0.3s ease, background 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Borda com degradê animado no hover e focus */
+  .trilha:hover,
+  .trilha:focus {
+    border: 2px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #12f0e5, #a910e6, #064de6);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    animation: borderAnimation 4s linear infinite;
+  }
+  
+  /* Animação do degradê na borda */
+  @keyframes borderAnimation {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
 .icones{
     width: 40px;
     height: 40px;
@@ -136,29 +226,61 @@ nav {
     color:  #FFFFFF;
     
 }
-.check__p__icone{
+@keyframes gradientMove {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+  
+  .check__p__icone {
     width: 30.5px;
     height: 20.5px;
     margin-left: 13px;
     margin-top: 13px;
     border: 1px solid #E7E5E4;
     border-radius: 8px;
-    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+  
+  /* Estilo ativo com degradê animado */
+  .check__p__icone.active {
+    border: 1px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #12f0e5, #a910e6, #064de6);
+    background-size: 200%;
+    animation: gradientMove 4s linear infinite;
+  }
+.check:hover,
+.check:focus{
+    border: 2px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #12f0e5, #a910e6, #064de6);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    animation: borderAnimation 4s linear infinite;
+  }
+  
 
-
-}
-.check:hover{
-    background-color: #F3541C;   
-}
 .check__p__icone:hover{
-    background-color: #F3541C;   
-
-}
+    border: 2px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #12f0e5, #a910e6, #064de6);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    animation: borderAnimation 4s linear infinite;
+  }
 
 
 
 strong {
-    color: #E43A12;
+    color: #064de6;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -173,30 +295,73 @@ strong {
     padding-left: 210px;
 
 }
+.input{
+    color: #8F8881;
+}
 
-.butao__1 {
+@keyframes gradientMove {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+  
+  /* Botão com borda em degradê animado */
+  .butao__1 {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     width: 123px;
     height: 48px;
-    color: #f67841;
-    border: 2px solid #f67841;
+    color: #064de6;
+    display: inline-flex;
+    background: #fff;
+    border: 2px solid transparent;
     border-radius: 8px;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(90deg, #8512f0, #a910e6, #064de6);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-size: 200%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: gradientMove 4s linear infinite;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover: preenche o fundo com degradê e inverte cor */
+  .butao__1:hover {
+    color: #fff;
+    background-image: linear-gradient(90deg, #064de6, #a910e6, #064de6);
+    background-clip: border-box;
+  }
 
-
-}
-
-.butao__2 {
+  .butao__2 {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     width: 169px;
     height: 48px;
-    background: #E43A12;
-    color: #FFFFFF;
+    color: #ffffff;
+    background: linear-gradient(90deg, #064de6, #a910e6, #064de6);
+    background-size: 200%;
+    border: none;
     border-radius: 8px;
-}
+    animation: gradientMove 4s linear infinite;
+    transition: filter 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover: brilho + leve efeito de "aperto" */
+  .butao__2:hover {
+    filter: brightness(1.1);
+    transform: scale(1.03);
+  }
 
 
 P {
@@ -248,10 +413,7 @@ input {
     
 }
 
-input:hover {
-    border: 2px solid #f67841;
 
-}
 
 
 .sexo{
@@ -265,7 +427,3 @@ input:hover {
     color: #8F8881;
 }
 
-.sexo:hover{
-    border: 2px solid #f67841;
-
-}
