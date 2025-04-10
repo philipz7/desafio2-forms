@@ -59,3 +59,13 @@ const form = document.getElementById('cadastro');
       form.reportValidity();
     }
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("cadastro");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        alert("Inscrição realizada com sucesso!");
+        
+    });
+});
