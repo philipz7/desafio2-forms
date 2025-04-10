@@ -117,6 +117,11 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.form-input:hover{
+    border: 1px solid #a910e6;
+}
+
+
 .input-group label {
     display: block;
     font-size: 0.9rem;
