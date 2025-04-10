@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <title>Login - Programa Trilhas</title>
 </head>
 <body>
-    <main class="formulario">
-        <div class="ilustracao">
-            <img src="./img/Ilustration.png" alt="foto do progamador">
+  <main class="container">
+    <div class="ilustracao">
+      <img src="./img/Ilustration.png" alt="Programador trabalhando" class="ilustracao-img" />
+    </div>
+
+    <div class="form-container">
+      <div class="form-content">
+        <h1 class="form-title">Bem-vindo de volta</h1>
+        <div class="form-description">
+          <p>Insira seus dados abaixo para acessar o</p>
+          <p class="highlight-text">Programa Trilhas.</p>
         </div>
- 
-        <div class="apresentacao__formulario" style="height: 623px;">
-            
-            <div class="inscricao">
-                
-                <h1>Insira os seus dados para fazer login</h1>
-                
-                <form id="loginForm">
-                    <label for="loginNome">Nome</label><br>
-                    <input type="text" id="loginNome" name="nome"  class="trilha1" required>
-                    <br><br><br>
 
-                    <label for="loginSenha">Senha:</label><br>
-                    <input type="password" id="loginSenha" name="nome"  class="trilha1" required>
-                    <br><br><br>
+        <form id="loginForm" class="form">
+          <fieldset class="form-section">
+            <legend class="section-title">Login</legend>
 
-                    <a class="butao__1" href="index.html">Cadastrar</a>
-                    <button class="butao__2" type="submit">Fazer login</button>        
-
-                </form>
-
+            <div class="input-group">
+              <label for="loginNome">Nome</label>
+              <input type="text" id="loginNome" name="nome" class="form-input" required />
             </div>
 
-        </div>
-</main>
-<script src="script2.js"></script>
-</body>
+            <div class="input-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" id="loginSenha" name="senha" class="form-input" required />
+            </div>
 
+            <div class="form-buttons">
+              <a href="index.html" class="btn btn-cancel">Cadastrar</a>
+              <button type="submit" class="btn btn-submit">Fazer login</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="script2.js"></script>
+</body>
 </html>

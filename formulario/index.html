@@ -1,124 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <title>FORM</title>
+    <title>Formulário de Inscrição - Programa Trilhas</title>
 </head>
-
 <body>
-
-    <header></header>
-
-    <main class="formulario">
+    <main class="container">
         <div class="ilustracao">
-            <img src="./img/Ilustration.png" alt="foto do progamador">
+            <img src="./img/Ilustration.png" alt="Programador trabalhando" class="ilustracao-img">
         </div>
- 
-        <div class="apresentacao__formulario">
-            
-            <div class="inscricao">
-                <h1>Formulário de inscrição</h1>
-                <p class="baixo">Preencha os dados abaixo para fazer sua inscrição no <p class="cima" id="wave-text">Programa   Trilhas.</p></p>
-                <h3 class="titulos">Informações do participante</h3>
-                <form id="cadastro">
-                    <label for="nome">Digite seu nome:</label>
-                    <input type="text" id="nome" name="nome" class="trilha1" required>
-                    <br><br><br>
 
-                    <label for="nome">Data e nascimento:</label>
-                    <input type="date"  name="nome"  class="trilha1" required>
-                    <br><br><br>
-
-                    <label for="nome">Cpf:</label><br>
-                    <input type="text" id="cpf" name="nome" maxlength="14" class="trilha1" required>
-                    <br><br><br>
-                    
-                  <label for="">Sexo:</label>
-                  <select class="sexo trilha1" required>
-                  <option value="famenino">masculino</option>
-                  <option value="famenino">feminino</option>
-                  </select>
-                    <br><br><br>
-
-                    <label for="nome">E-mail:</label><br>
-                    <input type="email" name="nome"  class="trilha1" required>
-                    <br><br><br>
-
-                    <label for="senha">Senha:</label><br>
-                    <input type="password" id="senha" name="nome"  class="trilha1" required>
-                    <br><br><br>
-
-
-
-                 
-
-              
-
-                    
-
-                        <!-- <div class="Trilhas__apredizagem">
-                            <h3 class="titulos">Trilhas de apredizagem</h3>
-                            <p>Selecione apenas uma trilha</p>
-
-                            <div class="trilhas">
-                                <div class="trilha">
-                                  <div class="check"> <img class="check__icone"  src="img/image copy 6.png" alt=""></div>
-                                    <img class="icones" src="img/image copy.png" alt="">
-                                    <P>Programação Front-end</P>
-                                </div>
-                                <div class="trilha">
-                                    <div class="check"> <img class="check__icone"  src="img/image copy 6.png" alt=""></div>
-                                    <img class="icones" src="img/image copy 2.png" alt="">
-                                    <p>Programação Back-end</p>
-                                </div>
-                                <div class="trilha">
-                                    <div class="check"> <img class="check__icone"  src="img/image copy 6.png" alt=""></div>
-                                    <img class="icones" src="img/image copy 3.png" alt="">
-                                    <p> Programação de Jogos</p>
-                                </div>
-                                <div class="trilha">
-                                    <div class="check"> <img class="check__icone"  src="img/image copy 6.png" alt=""></div>
-                                    <img class="icones" src="img/image copy 4.png" alt="">
-                                    <p> Design e Experiência</p>
-                                </div>
-                                <div class="trilha">
-                                    <div class="check"> <img class="check__icone"  src="img/image copy 6.png" alt=""></div>
-                                    <img class="icones" src="img/image copy 5.png" alt="">
-                                    <p> Ciência de Dados</p>
-                                </div>
-                            </div> -->
-
-                            <div class="check__p">
-                            <div class="check__p__icone"> <img class="check__icone"  src="img/image copy 6.png" alt=""></div>
-                            <p>Declaro que li e concordo com os <strong> Termos e Condições </strong>e com a <strong>
-                                    Política de Privacidade</strong>. </p>
-                            </div>
-
-                            <div class="butoes">
-                                <a class="butao__1" href="index.html">Resetar</a>
-                                <button class="butao__2" type="submit">Fazer inscrição</button>
-                            </div>
+        <div class="form-container">
+            <div class="form-content">
+                <h1 class="form-title">Formulário de inscrição</h1>
+                <div class="form-description">
+                    <p>Preencha os dados abaixo para fazer sua inscrição no</p>
+                    <p class="highlight-text">Programa Trilhas.</p>
+                </div>
+                
+                <form id="cadastro" class="form">
+                    <!-- Seção Informações Pessoais -->
+                    <fieldset class="form-section">
+                        <legend class="section-title">Informações do participante</legend>
                         
+                        <div class="input-group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" class="form-input" required>
                         </div>
+                        
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="nascimento">Data de nascimento</label>
+                                <input type="date" id="nascimento" name="nascimento" class="form-input" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="cpf">CPF</label>
+                                <input type="text" id="cpf" name="cpf" class="form-input" maxlength="14" required>
+                            </div>
+                        </div>
+                        
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="sexo">Sexo</label>
+                                <select id="sexo" name="sexo" class="form-input" required>
+                                    <option value="" disabled selected>Selecione</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="senha" class="form-input" required>
+                        </div>
+                    </fieldset>
+                    
+                    <!-- Seção Trilhas -->
+                    <fieldset class="form-section">
+                        <legend class="section-title">Trilhas de aprendizagem</legend>
+                        <p class="section-subtitle">Selecione apenas uma trilha</p>
 
-
-
-
-                    </div>
-
-
-
-
+                        <div class="trilhas-container">
+                            <label class="trilha-option">
+                                <input type="radio" name="trilha" value="frontend" class="trilha-radio">
+                                <div class="trilha-card">
+                                    <img src="img/image copy.png" alt="Front-end" class="trilha-icon">
+                                    <span>Programação Front-end</span>
+                                </div>
+                            </label>
+                            
+                            <label class="trilha-option">
+                                <input type="radio" name="trilha" value="backend" class="trilha-radio">
+                                <div class="trilha-card">
+                                    <img src="img/image copy 2.png" alt="Back-end" class="trilha-icon">
+                                    <span>Programação Back-end</span>
+                                </div>
+                            </label>
+                            
+                            <label class="trilha-option">
+                                <input type="radio" name="trilha" value="jogos" class="trilha-radio">
+                                <div class="trilha-card">
+                                    <img src="img/image copy 3.png" alt="Jogos" class="trilha-icon">
+                                    <span>Programação de Jogos</span>
+                                </div>
+                            </label>
+                            
+                            <label class="trilha-option">
+                                <input type="radio" name="trilha" value="design" class="trilha-radio">
+                                <div class="trilha-card">
+                                    <img src="img/image copy 4.png" alt="Design" class="trilha-icon">
+                                    <span>Design e Experiência</span>
+                                </div>
+                            </label>
+                            
+                            <label class="trilha-option">
+                                <input type="radio" name="trilha" value="dados" class="trilha-radio">
+                                <div class="trilha-card">
+                                    <img src="img/image copy 5.png" alt="Dados" class="trilha-icon">
+                                    <span>Ciência de Dados</span>
+                                </div>
+                            </label>
+                        </div>
+                        
+                        <div class="terms-container">
+                            <label class="terms-checkbox">
+                                <input type="checkbox" name="termos" required>
+                                <span class="checkmark"></span>
+                                <span class="terms-text">Declaro que li e concordo com os <a href="#" class="terms-link">Termos e Condições</a> e com a <a href="#" class="terms-link">Política de Privacidade</a>.</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <a href="index.html" class="btn btn-cancel">Resetar</a>
+                            <button type="submit" class="btn btn-submit">Fazer inscrição</button>
+                        </div>
+                    </fieldset>
                 </form>
-
             </div>
-
         </div>
-</main>
-<script src="script.js"></script>
+    </main>
+    <script src="script.js"></script>
 </body>
-
 </html>
