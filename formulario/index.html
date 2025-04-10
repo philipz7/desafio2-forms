@@ -21,13 +21,22 @@
                 </div>
                 
                 <form id="cadastro" class="form">
-                    <!-- Seção Informações Pessoais -->
                     <fieldset class="form-section">
                         <legend class="section-title">Informações do participante</legend>
                         
                         <div class="input-group">
-                            <label for="nome">Nome completo</label>
+                            <label for="nome">Nome de usuário</label>
                             <input type="text" id="nome" name="nome" class="form-input" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="senha" class="form-input" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="nome-completo">Nome completo</label>
+                            <input type="text" id="nome-completo" name="nome-completo" class="form-input" required>
                         </div>
                         
                         <div class="input-row">
@@ -55,14 +64,68 @@
                                 <input type="email" id="email" name="email" class="form-input" required>
                             </div>
                         </div>
+                    </fieldset>
+
+                    <fieldset class="form-section">
+                        <legend class="section-title">Endereço Residencial</legend>
+                        
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="cep">CEP</label>
+                                <input type="text" id="cep" name="cep" class="form-input" maxlength="9" pattern="[0-9]+" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="rua">Rua</label>
+                                <input type="text" id="rua" name="rua" class="form-input" pattern="[0-9]+" required>
+                            </div>
+                        </div>
+                        
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="numero">Número</label>
+                                <input type="text" id="numero" name="numero" class="form-input" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" id="cidade" name="cidade" class="form-input" required>
+                            </div>
+                        </div>
                         
                         <div class="input-group">
-                            <label for="senha">Senha</label>
-                            <input type="password" id="senha" name="senha" class="form-input" required>
+                            <label for="estado">Estado</label>
+                            <select id="estado" name="estado" class="form-input" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
                         </div>
                     </fieldset>
                     
-                    <!-- Seção Trilhas -->
                     <fieldset class="form-section">
                         <legend class="section-title">Trilhas de aprendizagem</legend>
                         <p class="section-subtitle">Selecione apenas uma trilha</p>
