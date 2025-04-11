@@ -1,16 +1,4 @@
-const waveText = document.getElementById('wave-text');
-const text = waveText.textContent;
-waveText.textContent = '';
-
-[...text].forEach((char, index) => {
-  const span = document.createElement('span');
-  span.textContent = char;
-  span.style.animationDelay = `${index * 0.1}s`;
-  waveText.appendChild(span);
-});
-
-
-
+// parte do cpf
 const cpfInput = document.getElementById('cpf');
 
 cpfInput.addEventListener('input', () => {
@@ -29,7 +17,7 @@ cpfInput.addEventListener('input', () => {
 });
 
 
-
+// parte de marcar termos
 const checkDiv = document.querySelector('.check__p__icone');
 
 checkDiv.addEventListener('click', () => {
@@ -38,7 +26,7 @@ checkDiv.addEventListener('click', () => {
 
 
 
-// PARTE DO LOGIN :P
+// PARTE DO ARMAZENAMENTO TEMPORARIO E REDIRECIONAMENTO PARA PAGINA DE LOGIN :P
 
 const form = document.getElementById('cadastro');
 
@@ -60,6 +48,7 @@ const form = document.getElementById('cadastro');
     }
   });
 
+  // ALERTA DE INSCRICAO REALIZADA
   document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("cadastro");
 
